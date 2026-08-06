@@ -1,210 +1,127 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    background:#FAF7F2;
-    font-family:'Inter',sans-serif;
-    color:#5F6657;
-    line-height:1.7;
+font-family:Georgia,serif;
+background:#F8F4EE;
+color:#666;
+line-height:1.7;
 }
 
 .hero{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    background:#FAF7F2;
+text-align:center;
+padding:80px 20px;
 }
 
-.hero-image{
-    width:100%;
-    max-width:700px;
-    border-radius:24px;
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
+.logo{
+width:180px;
+margin-bottom:25px;
 }
 
-.btn-principal{
-    margin-top:35px;
-    padding:16px 38px;
-    border-radius:40px;
-    text-decoration:none;
-    background:#AAB49A;
-    color:white;
-    font-weight:600;
-    transition:.3s;
+h1{
+font-size:58px;
+color:#8D9778;
+margin-bottom:15px;
 }
 
-.btn-principal:hover{
-    background:#909B82;
+.frase{
+font-size:24px;
+color:#8A8178;
+margin-bottom:40px;
+}
+
+.boton{
+display:inline-block;
+padding:16px 40px;
+border:2px solid #8D9778;
+border-radius:50px;
+text-decoration:none;
+color:#8D9778;
+font-weight:bold;
+transition:.3s;
+}
+
+.boton:hover{
+background:#8D9778;
+color:white;
 }
 
 section{
-    width:min(1100px,92%);
-    margin:auto;
-    padding:80px 0;
+max-width:1100px;
+margin:auto;
+padding:70px 20px;
 }
 
 h2{
-    font-family:'Cormorant Garamond',serif;
-    font-size:48px;
-    text-align:center;
-    color:#758165;
-    margin-bottom:40px;
+font-size:42px;
+text-align:center;
+margin-bottom:30px;
+color:#8D9778;
 }
 
-.card{
-    background:white;
-    padding:30px;
-    border-radius:20px;
-    margin-bottom:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,.05);
+.info{
+text-align:center;
+font-size:22px;
+margin-bottom:40px;
 }
 
-.card h3{
-    color:#758165;
-    margin-bottom:12px;
-}
-
-.boton-secundario{
-    display:inline-block;
-    margin-top:18px;
-    background:#E8DCCF;
-    color:#5F6657;
-    text-decoration:none;
-    padding:12px 24px;
-    border-radius:30px;
-}
-
-.texto{
-    max-width:820px;
-    margin:auto;
-    text-align:center;
-    margin-bottom:55px;
+.mapa iframe{
+width:100%;
+height:420px;
+border:none;
+border-radius:18px;
 }
 
 #contenedor-regalos{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
-    gap:25px;
+margin-top:50px;
 }
 
 .tarjeta{
-    background:white;
-    border-radius:22px;
-    padding:25px;
-    box-shadow:0 12px 28px rgba(0,0,0,.06);
-    transition:.25s;
-}
-
-.tarjeta:hover{
-    transform:translateY(-6px);
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+margin-bottom:25px;
 }
 
 .tarjeta h3{
-    font-family:'Cormorant Garamond',serif;
-    font-size:30px;
-    color:#758165;
+color:#8D9778;
+margin-bottom:12px;
 }
 
 .precio{
-    margin:12px 0 20px;
-    font-weight:600;
+font-size:22px;
+font-weight:bold;
+margin-bottom:18px;
 }
 
 .botones{
-    display:flex;
-    flex-direction:column;
-    gap:12px;
+display:flex;
+gap:12px;
+flex-wrap:wrap;
 }
 
-.ver{
-    background:#AAB49A;
-    color:white;
-    text-align:center;
-    padding:12px;
-    border-radius:30px;
-    text-decoration:none;
-}
-
-.reservar{
-    background:#EFDCD8;
-    color:#5F6657;
-    text-align:center;
-    padding:12px;
-    border-radius:30px;
-    text-decoration:none;
+.ver,
+.reservar,
+.whatsapp{
+display:inline-block;
+padding:12px 24px;
+border-radius:40px;
+text-decoration:none;
+background:#8D9778;
+color:white;
 }
 
 .reservado{
-    background:#D7D7D7;
-    color:#666;
-    text-align:center;
-    padding:12px;
-    border-radius:30px;
-    font-weight:bold;
+background:#ddd;
+padding:12px 24px;
+border-radius:40px;
 }
 
-.confirmacion{
-    text-align:center;
-}
-
-.whatsapp{
-    display:inline-block;
-    margin-top:25px;
-    background:#25D366;
-    color:white;
-    text-decoration:none;
-    padding:16px 34px;
-    border-radius:40px;
-    font-weight:600;
-}
-
-footer{
-    padding:60px 20px;
-    text-align:center;
-    color:#8D8D8D;
-}
-
-@media(max-width:768px){
-
-.hero{
-    padding:20px;
-}
-
-.hero-image{
-    width:100%;
-}
-
-h2{
-    font-size:38px;
-}
-
-.tarjeta h3{
-    font-size:26px;
-}
-
-  }
-.categoria{
-    margin-top:60px;
-    margin-bottom:25px;
-    text-align:left;
-    font-size:38px;
-    color:#758165;
-    border-bottom:1px solid #E7DED2;
-    padding-bottom:10px;
-}
-
-.grid-regalos{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:24px;
-    margin-bottom:30px;
-}
+#confirmacion{
+text-align:center;
+margin-bottom:80px;
+    }
