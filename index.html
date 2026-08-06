@@ -1,150 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Baby Shower de Vienna</title>
+    <title>Baby Shower de Vienna</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-
-background:#FAF6F1;
-font-family:'Inter',sans-serif;
-color:#707A68;
-
-}
-
-.hero{
-
-height:100vh;
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-padding:30px;
-
-}
-
-.logo{
-
-width:180px;
-
-margin-bottom:30px;
-
-}
-
-h1{
-
-font-family:'Cormorant Garamond',serif;
-
-font-size:65px;
-
-font-weight:500;
-
-letter-spacing:6px;
-
-color:#8A967A;
-
-}
-
-h2{
-
-font-family:'Cormorant Garamond',serif;
-
-font-size:28px;
-
-font-weight:300;
-
-margin-bottom:10px;
-
-}
-
-p{
-
-max-width:650px;
-
-font-size:18px;
-
-line-height:1.8;
-
-margin-top:25px;
-
-margin-bottom:40px;
-
-}
-
-button{
-
-padding:16px 40px;
-
-border-radius:50px;
-
-background:white;
-
-border:2px solid #97A286;
-
-font-size:18px;
-
-color:#7F8B73;
-
-cursor:pointer;
-
-transition:.3s;
-
-}
-
-button:hover{
-
-background:#EADFD5;
-
-}
-
-</style>
-
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<section class="hero">
+<header class="hero">
 
-<img src="logo.png" class="logo">
+<img src="images/portada.png" class="hero-image" alt="Baby Shower Vienna">
 
-<h2>Estás invitado (a) al</h2>
-
-<h1>BABY SHOWER<br>VIENNA</h1>
-
-<p>
-Un nuevo capítulo florece en nuestras vidas.
-Con inmensa ilusión te invitamos a celebrar
-la dulce espera de Vienna.
-</p>
-
-<button>
+<a href="#evento" class="btn-principal">
 Descubrir la celebración
-</button>
+</a>
+
+</header>
+
+<section id="evento" class="evento">
+
+<h2>El evento</h2>
+
+<div class="card">
+
+<h3>📅 Fecha</h3>
+
+<p>5 de septiembre de 2026</p>
+
+</div>
+
+<div class="card">
+
+<h3>🕗 Hora</h3>
+
+<p>20:00 h</p>
+
+</div>
+
+<div class="card">
+
+<h3>📍 Lugar</h3>
+
+<p>La Casita del Parque<br>Cox (Alicante)</p>
+
+<a class="boton-secundario"
+href="#">
+Cómo llegar
+</a>
+
+</div>
 
 </section>
 
-</body>
+<section class="regalos">
 
-  </html>
+<h2>Hacer un regalo a Vienna</h2>
+
+<p class="texto">
+
+Hemos preparado esta lista como una guía de regalos para quienes deseen tener un detalle con Vienna.
+
+Los enlaces son únicamente una sugerencia para facilitar la búsqueda y mostrar las características de cada artículo. Pueden adquirir el regalo en cualquier tienda o establecimiento de su preferencia.
+
+Si desean hacer un regalo en pareja, en familia o entre varios amigos, será una hermosa forma de compartir este momento.
+
+Para evitar regalos repetidos, les agradecemos reservar el artículo antes de realizar la compra.
+
+</p>
+
+<div id="contenedor-regalos"></div>
+
+</section>
+
+<section class="confirmacion">
+
+<h2>¿Nos acompañas?</h2>
+
+<p>
+
+Nos encantará compartir este momento contigo.
+
+</p>
+
+<a
+class="whatsapp"
+href="https://wa.me/34603587634?text=Hola%20Joselyn.%20Confirmo%20mi%20asistencia%20al%20Baby%20Shower%20de%20Vienna.%20💕">
+
+Confirmar asistencia
+
+</a>
+
+</section>
+
+<footer>
+
+Con cariño,
+
+Jose, Joselyn & Vienna 🤍
+
+</footer>
+
+<script src="regalos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
