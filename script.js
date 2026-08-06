@@ -1,49 +1,59 @@
 const contenedor = document.getElementById("contenedor-regalos");
 
-regalos.forEach(regalo => {
+const categorias = [...new Set(regalos.map(r => r.categoria))];
 
-    const tarjeta = document.createElement("div");
-    tarjeta.className = "tarjeta";
+categorias.forEach(categoria => {
 
-    tarjeta.innerHTML = `
+    const titulo = document.createElement("h2");
+    titulo.className = "categoria";
+    titulo.textContent = categoria;
 
-        <h3>${regalo.nombre}</h3>
+    contenedor.appendChild(titulo);
 
-        <div class="precio">${regalo.precio}</div>
+    const grid = document.createElement("div");
+    grid.className = "grid-regalos";
 
-        <div class="botones">
+    regalos
+        .filter(r => r.categoria === categoria)
+        .forEach(regalo => {
 
-            <a class="ver"
-               href="${regalo.enlace}"
-               target="_blank">
-               Ver regalo
-            </a>
+            const tarjeta = document.createElement("div");
+            tarjeta.className = "tarjeta";
 
-            ${
-                regalo.reservado
+            tarjeta.innerHTML = `
+                <h3>${regalo.nombre}</h3>
 
-                ?
+                <div class="precio">${regalo.precio}</div>
 
-                `<div class="reservado">
-                    🔒 Reservado
-                 </div>`
+                <div class="botones">
 
-                :
+                    <a class="ver"
+                       href="${regalo.enlace}"
+                       target="_blank">
+                       🛍 Ver regalo
+                    </a>
 
-                `<a
-                    class="reservar"
-                    target="_blank"
-                    href="https://wa.me/34603587634?text=${encodeURIComponent(
-                        `Hola Joselyn 😊. Quisiera reservar el regalo "${regalo.nombre}" para el Baby Shower de Vienna.`
-                    )}">
-                    Reservar este regalo
-                 </a>`
-            }
+                    ${
+                        regalo.reservado
+                        ?
+                        `<div class="reservado">🔒 Reservado</div>`
+                        :
+                        `<a class="reservar"
+                           target="_blank"
+                           href="https://wa.me/34603587634?text=${encodeURIComponent(
+                                `Hola Joselyn 😊. Quisiera reservar el regalo "${regalo.nombre}" para el Baby Shower de Vienna.`
+                           )}">
+                           💬 Reservar
+                        </a>`
+                    }
 
-        </div>
+                </div>
+            `;
 
-    `;
+            grid.appendChild(tarjeta);
 
-    contenedor.appendChild(tarjeta);
+        });
+
+    contenedor.appendChild(grid);
 
 });
