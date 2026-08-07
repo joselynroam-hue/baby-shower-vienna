@@ -1,1 +1,23 @@
-
+[
+  {
+    "nombre": "Carricoche",
+    "precio": "239 € aprox.",
+    "enlace": "",
+    "categoria": "Paseo",
+    "reservado": false
+  },
+  {
+    "nombre": "Maxi-Cosi",
+    "precio": "319 € aprox.",
+    "enlace": "",
+    "categoria": "Paseo",
+    "reservado": false
+  },
+  {
+    "nombre": "Colecho",
+    "precio": "89 € aprox.",
+    "enlace": "",
+    "categoria": "Descanso",
+    "reservado": false
+  }
+]
