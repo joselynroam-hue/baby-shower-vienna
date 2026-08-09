@@ -85,6 +85,7 @@ regalos.forEach(regalo => {
 });
 
 const categorias = [...new Set(regalos.map(r => r.categoria))];
+categorias.forEach(categoria => {
 
     const titulo = document.createElement("h2");
     titulo.className = "categoria";
