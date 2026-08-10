@@ -239,16 +239,16 @@ h2 {
 
 .tarjeta h3 {
     color: #7f896a;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: normal;
-    line-height: 1.4;
-    margin-bottom: 10px;
+    line-height: 1.35;
+    margin: 0 0 10px;
 }
 
 .precio {
     color: #77716b;
-    font-size: 17px;
-    margin-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: 18px;
 }
 
 /* Botones de regalos */
