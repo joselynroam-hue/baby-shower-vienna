@@ -53,10 +53,14 @@ body {
 }
 
 h1 {
-    font-size: 58px;
-    line-height: 1.18;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 64px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    line-height: 1.15;
     color: #8D9778;
     margin-bottom: 22px;
+    text-transform: uppercase;
 }
 
 .frase {
@@ -295,8 +299,9 @@ h2 {
     }
 
     h1 {
-        font-size: 38px;
-        line-height: 1.2;
+    font-size: 44px;
+    letter-spacing: 2.5px;
+    line-height: 1.2;
     }
 
     .frase {
