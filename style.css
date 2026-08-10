@@ -252,10 +252,12 @@ h2 {
 }
 
 /* Botones de regalos */
+
 .botones {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    margin-top: 5px;
 }
 
 .ver,
@@ -272,13 +274,14 @@ h2 {
 }
 
 .ver {
-    background: transparent;
+    background: #fffdf9;
     border: 1px solid #929d7b;
     color: #7f896a;
 }
 
 .reservar {
     background: #929d7b;
+    border: 1px solid #929d7b;
     color: #ffffff;
 }
 
