@@ -53,14 +53,32 @@ body {
 }
 
 h1 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 64px;
-    font-weight: 500;
-    letter-spacing: 4px;
-    line-height: 1.15;
-    color: #8D9778;
+    line-height: 1.2;
     margin-bottom: 22px;
-    text-transform: uppercase;
+    color: #8D9778;
+}
+
+.titulo-pequeno {
+    display: block;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.titulo-baby {
+    display: block;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 2px;
+}
+
+.titulo-vienna {
+    display: block;
+    font-size: 68px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    line-height: 1.05;
 }
 
 .frase {
@@ -299,10 +317,21 @@ h2 {
     }
 
     h1 {
-    font-size: 44px;
-    letter-spacing: 2.5px;
     line-height: 1.2;
-    }
+}
+
+.titulo-pequeno {
+    font-size: 19px;
+}
+
+.titulo-baby {
+    font-size: 24px;
+}
+
+.titulo-vienna {
+    font-size: 48px;
+    letter-spacing: 4px;
+}
 
     .frase {
         font-size: 18px;
