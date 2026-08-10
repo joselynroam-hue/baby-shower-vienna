@@ -33,67 +33,70 @@ body {
 
 .hero-overlay {
     background: rgba(248, 244, 238, 0.90);
-    padding: 55px 45px 60px;
+    padding: 45px 35px 50px;
     border-radius: 30px;
     text-align: center;
     max-width: 760px;
-    width: 100%;
+    width: 92%;
     backdrop-filter: blur(5px);
     box-shadow: 0 12px 35px rgba(100, 90, 70, 0.08);
 }
 
-/* LOGO MÁS GRANDE */
+/* LOGO */
 .logo {
-    width: 300px;
-    max-width: 75%;
-    margin-bottom: 28px;
+    width: 280px;
+    max-width: 72%;
+    height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 22px;
 }
 
+/* TÍTULO */
 h1 {
     line-height: 1.2;
-    margin-bottom: 22px;
+    margin: 0 0 22px;
     color: #8D9778;
+    font-weight: 400;
 }
 
 .titulo-pequeno {
     display: block;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: normal;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin-bottom: 8px;
 }
 
 .titulo-baby {
     display: block;
-    font-size: 30px;
+    font-size: 27px;
     font-weight: normal;
+    letter-spacing: 1px;
     margin-bottom: 2px;
 }
 
 .titulo-vienna {
     display: block;
-    font-size: 68px;
+    font-size: 58px;
     font-weight: 500;
-    letter-spacing: 6px;
+    letter-spacing: 5px;
     line-height: 1.05;
 }
+
 .frase {
-    font-size: 22px;
+    font-size: 20px;
     color: #8A8178;
-    margin-bottom: 38px;
+    margin-bottom: 32px;
 }
 
 .boton {
     display: inline-block;
-    padding: 14px 34px;
-    border: 2px solid #8D9778;
+    padding: 13px 32px;
+    border: 1px solid #8D9778;
     border-radius: 50px;
     text-decoration: none;
     color: #8D9778;
-    font-weight: bold;
+    font-weight: normal;
     transition: all 0.3s ease;
     background: transparent;
 }
@@ -199,18 +202,17 @@ h2 {
 /* Categorías */
 .categoria {
     position: relative;
-    font-size: 36px;
-    color: #8D9778;
-    text-align: center;
-    margin: 65px 0 28px;
+    font-size: 25px;
+    color: #687158;
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 38px 0 18px;
+    padding-left: 8px;
 }
 
 .categoria::after {
-    content: "✿";
-    display: block;
-    font-size: 22px;
-    color: #D9A6A1;
-    margin-top: 4px;
+    content: "";
 }
 
 /* Cuadrícula */
@@ -222,11 +224,11 @@ h2 {
 
 /* Tarjeta */
 .tarjeta {
-    background: #fffdf9;
-    padding: 26px;
-    border-radius: 24px;
-    border: 1px solid rgba(141, 151, 120, 0.16);
-    box-shadow: 0 8px 25px rgba(70, 65, 55, 0.07);
+    background: rgba(255, 255, 255, 0.92);
+    padding: 25px 28px;
+    border-radius: 22px;
+    border: 1px solid rgba(141, 151, 120, 0.12);
+    box-shadow: 0 8px 24px rgba(70, 65, 55, 0.08);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
