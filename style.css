@@ -222,29 +222,30 @@ h2 {
 
 /* Tarjeta */
 .tarjeta {
-    background: rgba(255, 255, 255, 0.92);
-    padding: 25px;
-    border-radius: 22px;
-    box-shadow: 0 8px 24px rgba(70, 65, 55, 0.08);
-    border: 1px solid rgba(141, 151, 120, 0.12);
+    background: #fffdf9;
+    padding: 26px;
+    border-radius: 24px;
+    border: 1px solid rgba(141, 151, 120, 0.16);
+    box-shadow: 0 8px 25px rgba(70, 65, 55, 0.07);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .tarjeta:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(70, 65, 55, 0.12);
+    box-shadow: 0 12px 30px rgba(70, 65, 55, 0.11);
 }
 
 .tarjeta h3 {
-    color: #929d7b;
-    font-size: 22px;
-    margin-bottom: 12px;
+    color: #7f896a;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.4;
+    margin-bottom: 10px;
 }
 
 .precio {
-    font-size: 20px;
-    font-weight: bold;
-    color: #66645f;
+    color: #77716b;
+    font-size: 17px;
     margin-bottom: 20px;
 }
 
@@ -257,41 +258,36 @@ h2 {
 
 .ver,
 .reservar,
-.whatsapp {
-    display: inline-block;
-    padding: 10px 18px;
-    border-radius: 40px;
+.reservado {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 17px;
+    border-radius: 30px;
+    font-size: 14px;
     text-decoration: none;
-    font-size: 15px;
     transition: all 0.25s ease;
 }
 
 .ver {
     background: transparent;
-    border: 1.5px solid #8D9778;
-    color: #7F8A6B;
+    border: 1px solid #929d7b;
+    color: #7f896a;
 }
 
-.reservar,
-.whatsapp {
-    background: #8D9778;
-    color: white;
-}
-
-.ver:hover,
-.reservar:hover,
-.whatsapp:hover {
-    transform: translateY(-2px);
-    opacity: 0.88;
+.reservar {
+    background: #929d7b;
+    color: #ffffff;
 }
 
 .reservado {
-    display: inline-block;
-    background: #E8E4DE;
-    color: #817A73;
-    padding: 10px 18px;
-    border-radius: 40px;
-    font-size: 15px;
+    background: #ebe8e1;
+    color: #77716b;
+}
+
+.ver:hover,
+.reservar:hover {
+    transform: translateY(-2px);
 }
 
 /* =========================
@@ -428,3 +424,18 @@ h2 {
         font-size: 14px;
     }
     }
+.grid-regalos {
+    grid-template-columns: 1fr;
+}
+
+.tarjeta {
+    padding: 22px 19px;
+}
+
+.tarjeta h3 {
+    font-size: 19px;
+}
+
+.botones {
+    gap: 8px;
+}
