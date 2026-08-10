@@ -301,15 +301,36 @@ h2 {
 
 #confirmacion {
     text-align: center;
-    margin-bottom: 60px;
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 30px;
+    margin: 30px auto 70px;
+    padding: 55px 25px;
+    max-width: 900px;
+    box-shadow: 0 8px 25px rgba(70, 65, 55, 0.05);
+}
+
+#confirmacion h2 {
+    margin-bottom: 18px;
 }
 
 #confirmacion p {
-    font-size: 19px;
-    margin-bottom: 30px;
+    font-size: 18px;
+    margin: 0 auto 28px;
     color: #817A73;
+    max-width: 600px;
 }
 
+#confirmacion .boton {
+    background: #929d7b;
+    color: #ffffff;
+    border: 1px solid #929d7b;
+    padding: 13px 28px;
+}
+
+#confirmacion .boton:hover {
+    background: #7f8a68;
+    color: #ffffff;
+}
 /* =========================
    MAPA
    ========================= */
