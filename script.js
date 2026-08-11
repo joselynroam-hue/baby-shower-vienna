@@ -1,5 +1,7 @@
 const contenedor = document.getElementById("contenedor-regalos");
 
+console.log("REGALOS:", regalos);
+
 function obtenerCategoria(nombre) {
 
     const n = nombre.toLowerCase();
