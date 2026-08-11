@@ -15,7 +15,7 @@ function obtenerCategoria(nombre) {
         n.includes("lactancia") ||
         n.includes("purelan")
     ) {
-        return "🤱 Mamá y lactancia";
+        return "Mamá y lactancia";
     }
 
     if (
@@ -28,7 +28,7 @@ function obtenerCategoria(nombre) {
         n.includes("calcet") ||
         n.includes("babero")
     ) {
-        return "👗 Ropita y accesorios";
+        return "Ropita y accesorios";
     }
 
     if (
@@ -41,7 +41,7 @@ function obtenerCategoria(nombre) {
         n.includes("aspirador nasal") ||
         n.includes("uñas")
     ) {
-        return "🛁 Higiene y cuidado";
+        return "Higiene y cuidado";
     }
 
     if (
@@ -54,7 +54,7 @@ function obtenerCategoria(nombre) {
         n.includes("cojín") ||
         n.includes("dormir")
     ) {
-        return "🛏️ Dormitorio";
+        return "Dormitorio";
     }
 
     if (
@@ -66,7 +66,7 @@ function obtenerCategoria(nombre) {
         n.includes("portabebé") ||
         n.includes("porteo")
     ) {
-        return "🚗 Paseo y transporte";
+        return "Paseo y transporte";
     }
 
     if (
@@ -76,10 +76,10 @@ function obtenerCategoria(nombre) {
         n.includes("mecedora") ||
         n.includes("sacaleches")
     ) {
-        return "🍼 Para Vienna";
+        return "Para Vienna";
     }
 
-    return "🎁 Otros";
+    return "Otros";
 }
 
 regalos.forEach(regalo => {
