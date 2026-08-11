@@ -300,36 +300,56 @@ h2 {
    ========================= */
 
 #confirmacion {
-    text-align: center;
-    background: rgba(255, 255, 255, 0.55);
-    border-radius: 30px;
-    margin: 30px auto 70px;
-    padding: 55px 25px;
     max-width: 900px;
-    box-shadow: 0 8px 25px rgba(70, 65, 55, 0.05);
+    margin: 40px auto 80px;
+    padding: 55px 25px 60px;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(141, 151, 120, 0.16);
+    border-radius: 30px;
+
+    box-shadow: 0 10px 30px rgba(70, 65, 55, 0.06);
 }
 
 #confirmacion h2 {
+    color: #8D9778;
+    font-size: 42px;
     margin-bottom: 18px;
 }
 
+#confirmacion h2::after {
+    content: "✿";
+    display: block;
+    color: #D9A6A1;
+    font-size: 22px;
+    margin-top: 8px;
+}
+
 #confirmacion p {
-    font-size: 18px;
-    margin: 0 auto 28px;
-    color: #817A73;
     max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #817A73;
 }
 
 #confirmacion .boton {
-    background: #929d7b;
+    display: inline-block;
+    background: #929D7B;
     color: #ffffff;
-    border: 1px solid #929d7b;
-    padding: 13px 28px;
+    border: 1px solid #929D7B;
+    padding: 14px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.25s ease;
 }
 
 #confirmacion .boton:hover {
-    background: #7f8a68;
-    color: #ffffff;
+    background: #7F896A;
+    border-color: #7F896A;
+    transform: translateY(-2px);
 }
 /* =========================
    MAPA
@@ -455,5 +475,24 @@ h2 {
         min-width: 120px;
         padding: 9px 15px;
         font-size: 14px;
+    }
+    #confirmacion {
+    margin: 30px 16px 60px;
+    padding: 40px 20px 45px;
+    border-radius: 26px;
+}
+
+#confirmacion h2 {
+    font-size: 34px;
+}
+
+#confirmacion p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#confirmacion .boton {
+    padding: 12px 24px;
+    font-size: 15px;
     }
 }
