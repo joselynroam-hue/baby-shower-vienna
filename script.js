@@ -1,7 +1,7 @@
 const contenedor = document.getElementById("contenedor-regalos");
 
 const SUPABASE_URL = "https://oylvgvequxxfggdbjhgu.supabase.co";
-const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IkpXVCJ9.WMekvSfboTOBYUDJDWvgwy1isYPFJGwVpqFVF7aArxY";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95bHZndmVxdXh4ZmdnZGJqaGd1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY1MzM2MzUsImV4cCI6MjEwMjEwOTYzNX0.WMekvSfboTOBYUDJDWvgwy1isYPFJGwVpqFVF7aArxY";
 
 // =====================================================
 // CATEGORÍAS
