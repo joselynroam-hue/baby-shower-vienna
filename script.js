@@ -122,7 +122,21 @@ async function cargarReservas() {
         );
 
         if (!respuesta.ok) {
-            throw new Error("No se pudieron cargar las reservas.");
+    const errorTexto = await respuesta.text();
+
+    console.error("ERROR SUPABASE:", respuesta.status, errorTexto);
+
+    alert(
+        "Error de Supabase (" +
+        respuesta.status +
+        "): " +
+        errorTexto
+    );
+
+    boton.disabled = false;
+    boton.textContent = "💬 Reservar";
+
+    return;
         }
 
         const reservas = await respuesta.json();
